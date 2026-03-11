@@ -1,0 +1,99 @@
+<!-- hotel-website/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | The Grand Horizon</title>
+  <meta name="description" content="Discover the story of The Grand Horizon, our team, mission and passion for luxury hospitality.">
+  <meta property="og:title" content="About The Grand Horizon">
+  <meta property="og:image" content="img/hotel-exterior.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The Grand Horizon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mt-5 pt-4">
+    <div class="container my-5">
+      <h1 class="section-title">Our Story</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="img/hotel-exterior.jpg" class="img-fluid rounded shadow" alt="Grand Horizon exterior">
+        </div>
+        <div class="col-lg-6">
+          <p class="lead">Since 1925, The Grand Horizon has been a beacon of luxury and timeless elegance. Located in the heart of the city, we've welcomed guests from around the world.</p>
+          <p>Our hotel was founded by the Vanderbilt family with a vision to create a sanctuary of comfort and style. Over the decades, we've preserved our historic charm while continuously modernizing to exceed expectations.</p>
+          <p>Today, we remain a family-owned property dedicated to personalized service, exquisite design, and culinary excellence.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title mt-5">Our Team</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card team-card">
+            <img src="img/team1.jpg" class="card-img-top" alt="General Manager">
+            <div class="card-body">
+              <h5>James Whitmore</h5>
+              <p class="text-muted">General Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card team-card">
+            <img src="img/team2.jpg" class="card-img-top" alt="Head Chef">
+            <div class="card-body">
+              <h5>Elena Rossi</h5>
+              <p class="text-muted">Executive Chef</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card team-card">
+            <img src="img/team3.jpg" class="card-img-top" alt="Spa Director">
+            <div class="card-body">
+              <h5>Maya Chen</h5>
+              <p class="text-muted">Spa Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title mt-5">Our Mission</h2>
+      <p class="text-center">To craft unforgettable experiences through genuine hospitality, exceptional comfort, and attention to every detail. We strive to make every guest feel like royalty.</p>
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 The Grand Horizon. All rights reserved.</p>
+      <p class="small">123 Luxury Ave, Dream City | +1 234 567 890 | info@grandhorizon.com</p>
+    </div>
+  </footer>
+
+  <!-- Modal (same as index, include it on every page) -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">[...modal content...]</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

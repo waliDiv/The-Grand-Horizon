@@ -1,0 +1,158 @@
+/* hotel-website/css/style.css */
+
+/* Base & typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding-top: 70px; /* for fixed navbar */
+}
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #c9a86c;
+}
+.price {
+  font-weight: 600;
+  color: #b38b5f;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  transition: background 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.9);
+  font-weight: 400;
+  margin: 0 0.5rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #c9a86c;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.btn-outline-light:hover {
+  background-color: #c9a86c;
+  border-color: #c9a86c;
+}
+
+/* Hero carousel */
+.carousel-item {
+  max-height: 80vh;
+  overflow: hidden;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 80vh;
+}
+.carousel-caption {
+  background: rgba(0,0,0,0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  bottom: 20%;
+}
+.carousel-caption h1 {
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Cards */
+.room-card, .team-card, .service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.room-card:hover, .team-card:hover, .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.room-card .btn-primary {
+  background-color: #b38b5f;
+  border-color: #b38b5f;
+}
+.room-card .btn-primary:hover {
+  background-color: #9e6f45;
+  border-color: #9e6f45;
+}
+
+/* Service icons */
+.service-icon {
+  font-size: 3.5rem;
+  color: #b38b5f;
+  margin-bottom: 1rem;
+}
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-style: italic;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hero.jpg') center/cover fixed;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: #aaa;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #c9a86c;
+}
+
+/* Map container */
+.map-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}

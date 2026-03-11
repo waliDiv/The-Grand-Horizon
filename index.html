@@ -1,0 +1,231 @@
+<!-- hotel-website/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Hotel | Home</title>
+  <!-- SEO meta -->
+  <meta name="description" content="Experience unparalleled luxury at The Grand Horizon. Elegant rooms, fine dining, spa, and exceptional service in the heart of the city.">
+  <meta name="keywords" content="luxury hotel, 5 star hotel, accommodation, fine dining, spa">
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Grand Horizon - Luxury Hotel">
+  <meta property="og:description" content="Experience unparalleled luxury at The Grand Horizon.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta property="og:type" content="website">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons (optional but nice) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sticky navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The Grand Horizon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero carousel -->
+  <header id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/hero.jpg" class="d-block w-100" alt="Luxury hotel lobby" loading="lazy">
+        <div class="carousel-caption">
+          <h1 class="display-3">Welcome to The Grand Horizon</h1>
+          <p class="lead">Where elegance meets comfort</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pool.jpg" class="d-block w-100" alt="Infinity pool" loading="lazy">
+        <div class="carousel-caption">
+          <h1 class="display-3">Infinity Pool & Spa</h1>
+          <p class="lead">Relax and rejuvenate</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/dining.jpg" class="d-block w-100" alt="Fine dining" loading="lazy">
+        <div class="carousel-caption">
+          <h1 class="display-3">Gourmet Dining</h1>
+          <p class="lead">A culinary journey</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Featured rooms -->
+    <section class="container my-5">
+      <h2 class="section-title text-center">Featured Rooms</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card room-card h-100">
+            <img src="img/room1.jpg" class="card-img-top" alt="Deluxe suite with city view">
+            <div class="card-body">
+              <h5 class="card-title">Deluxe Suite</h5>
+              <p class="card-text">City view, king bed, marble bathroom. <br> <span class="price">$350 / night</span></p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card room-card h-100">
+            <img src="img/room2.jpg" class="card-img-top" alt="Executive suite with terrace">
+            <div class="card-body">
+              <h5 class="card-title">Executive Terrace</h5>
+              <p class="card-text">Private terrace, ocean view, jacuzzi. <br> <span class="price">$520 / night</span></p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card room-card h-100">
+            <img src="img/room3.jpg" class="card-img-top" alt="Presidential suite">
+            <div class="card-body">
+              <h5 class="card-title">Presidential Suite</h5>
+              <p class="card-text">Panoramic views, butler service. <br> <span class="price">$890 / night</span></p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services overview -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Services & Amenities</h2>
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <i class="bi bi-cup-hot-fill service-icon"></i>
+            <h5>Restaurant</h5>
+            <p>Michelin-star dining</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-water service-icon"></i>
+            <h5>Spa & Wellness</h5>
+            <p>Full-service spa</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-tropical-fish service-icon"></i>
+            <h5>Infinity Pool</h5>
+            <p>Heated, poolside bar</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-calendar-check service-icon"></i>
+            <h5>Events</h5>
+            <p>Weddings & galas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container my-5">
+      <h2 class="section-title text-center">Guest Stories</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“The most luxurious stay ever. Impeccable service.”</p>
+            <span>— Sophia R.</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“The suite was breathtaking, the staff so attentive.”</p>
+            <span>— James T.</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“Incredible food, amazing pool. We'll be back!”</p>
+            <span>— Elena M.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-section text-center py-5">
+      <div class="container">
+        <h3 class="mb-4">Experience the Horizon</h3>
+        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">Reserve Your Stay</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 The Grand Horizon. All rights reserved.</p>
+      <p class="small">123 Luxury Ave, Dream City | +1 234 567 890 | info@grandhorizon.com</p>
+      <div>
+        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Make a Reservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="checkin" class="form-label">Check-in</label>
+              <input type="date" class="form-control" id="checkin" required>
+            </div>
+            <div class="mb-3">
+              <label for="checkout" class="form-label">Check-out</label>
+              <input type="date" class="form-control" id="checkout" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Check Availability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
